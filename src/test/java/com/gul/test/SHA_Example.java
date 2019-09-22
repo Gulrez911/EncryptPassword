@@ -9,7 +9,7 @@ public class SHA_Example {
 	public static void main(String[] args) throws NoSuchAlgorithmException {
 		String passwordToHash = "password";
 		byte[] salt = getSalt();
-
+		System.out.println("Main Salt: "+salt);
 		String securePassword; 
 		securePassword	= get_SHA_1_SecurePassword(passwordToHash, salt);
 		System.out.println(securePassword);
@@ -100,6 +100,7 @@ public class SHA_Example {
 		SecureRandom sr = SecureRandom.getInstance("SHA1PRNG");
 		byte[] salt = new byte[16];
 		sr.nextBytes(salt);
+		System.out.println("Salt: "+salt);
 		return salt;
 	}
 }

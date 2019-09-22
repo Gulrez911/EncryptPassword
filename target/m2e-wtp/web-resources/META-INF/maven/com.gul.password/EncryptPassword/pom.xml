@@ -9,6 +9,13 @@
 	<name>EncryptPassword Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.github.ivangolubev/pbkdf2-sha512 -->
+		<dependency>
+			<groupId>com.github.ivangolubev</groupId>
+			<artifactId>pbkdf2-sha512</artifactId>
+			<version>1.0.RELEASE</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.mindrot/jbcrypt -->
 		<dependency>
 			<groupId>org.mindrot</groupId>
